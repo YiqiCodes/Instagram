@@ -32,6 +32,7 @@ export const ScrollableContainerDiv = styled.div`
   top: 3rem;
   height: 88.3vh;
   width: 100vw;
+  overflow-y: scroll;
 `;
 
 // Top Bar
@@ -89,4 +90,60 @@ export const IconContainerDiv = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+`;
+
+// Posts Styles
+
+export const PostContainerDiv = styled.div`
+  height: 80vh;
+  width: 100%;
+  background: gray;
+`;
+
+export const PostTitleDiv = styled.div`
+  height: 6%;
+  background: orange;
+`;
+
+export const PostImageDiv = styled.div`
+  height: 69%;
+  background: aqua;
+`;
+
+export const PostFooterDiv = styled.div`
+  height: 25%;
+  background: green;
+`;
+
+export const PostFooterIconDiv = styled.div`
+  height: 25%;
+  background: brown;
+`;
+
+export const PostFooterTextDiv = styled.div`
+  height: 100%;
+  background: black;
+`;
+
+export const PostFooterLikedByDiv = styled.div`
+  height: 15%;
+  background: gray;
+`;
+
+export const PostFooterCaptionDiv = styled.div`
+  height: 30%;
+  background: brown;
+`;
+export const PostFooterViewAllCommentsDiv = styled.div`
+  height: 15%;
+  background: gray;
+`;
+export const PostFooterAddCommentDiv = styled.div`
+  height: 20%;
+  background: red;
+`;
+
+export const PostFooterTimeDiv = styled.div`
+  height: 10%;
+  background: green;
 `;
