@@ -101,12 +101,48 @@ export const PostContainerDiv = styled.div`
   background: gray;
 `;
 
-export const PostTitleDiv = styled.div`
-  height: 5vh;
-  background: orange;
+export const ProfilePictureDiv = styled.img`
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
 `;
 
-export const PostImageDiv = styled.div`
+export const ProfileNameDiv = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 80%;
+  font-weight: 600;
+`;
+
+export const ProfileSettings = styled.div`
+  display: flex;
+  align-items: center;
+  padding-right: 1rem;
+  font-size: xx-large;
+  height: 50%;
+`;
+
+export const PostTitleLeft = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 1rem;
+  height: 100%;
+  width: 40%;
+`;
+
+export const PostTitleDiv = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 5vh;
+  background: black;
+`;
+
+export const PostImageDiv = styled.img`
   height: 60vh;
   background: aqua;
 `;
