@@ -1,9 +1,18 @@
 import React from "react";
+
+import PostImageOne from "../../assets/img/PostOne.JPG";
+import PostImageTwo from "../../assets/img/PostTwo.JPG";
+import PostImageThree from "../../assets/img/PostThree.JPG";
+import ProfilePic from "../../assets/img/Yiqi.jpg";
 import {
   PostsContainerDiv,
   PostContainerDiv,
   PostTitleDiv,
+  ProfilePictureDiv,
+  ProfileNameDiv,
+  PostTitleLeft,
   PostImageDiv,
+  ProfileSettings,
   PostFooterDiv,
   PostFooterIconDiv,
   PostFooterTextDiv,
@@ -17,9 +26,17 @@ import {
 const Posts = () => {
   return (
     <PostsContainerDiv>
+      {/*First Post*/}
       <PostContainerDiv>
-        <PostTitleDiv>National Geographic</PostTitleDiv>
-        <PostImageDiv>Image </PostImageDiv>
+        <PostTitleDiv>
+          <PostTitleLeft>
+            <ProfilePictureDiv src={ProfilePic} alt=""></ProfilePictureDiv>
+            <ProfileNameDiv>zhangyiqi</ProfileNameDiv>
+          </PostTitleLeft>
+          <ProfileSettings>...</ProfileSettings>
+        </PostTitleDiv>
+
+        <PostImageDiv src={PostImageTwo} alt="" />
         <PostFooterDiv>
           <PostFooterIconDiv>Icons</PostFooterIconDiv>
           <PostFooterTextDiv>
@@ -37,10 +54,18 @@ const Posts = () => {
           </PostFooterTextDiv>
         </PostFooterDiv>
       </PostContainerDiv>
-      ;
+
+      {/*Second Post*/}
       <PostContainerDiv>
-        <PostTitleDiv>National Geographic</PostTitleDiv>
-        <PostImageDiv>Image </PostImageDiv>
+        <PostTitleDiv>
+          <PostTitleLeft>
+            <ProfilePictureDiv src={ProfilePic} alt=""></ProfilePictureDiv>
+            <ProfileNameDiv>zhangyiqi</ProfileNameDiv>
+          </PostTitleLeft>
+          <ProfileSettings>...</ProfileSettings>
+        </PostTitleDiv>
+
+        <PostImageDiv src={PostImageOne} alt="" />
         <PostFooterDiv>
           <PostFooterIconDiv>Icons</PostFooterIconDiv>
           <PostFooterTextDiv>
@@ -58,10 +83,18 @@ const Posts = () => {
           </PostFooterTextDiv>
         </PostFooterDiv>
       </PostContainerDiv>
-      ;
+
+      {/*Third Post*/}
       <PostContainerDiv>
-        <PostTitleDiv>National Geographic</PostTitleDiv>
-        <PostImageDiv>Image </PostImageDiv>
+        <PostTitleDiv>
+          <PostTitleLeft>
+            <ProfilePictureDiv src={ProfilePic} alt=""></ProfilePictureDiv>
+            <ProfileNameDiv>zhangyiqi</ProfileNameDiv>
+          </PostTitleLeft>
+          <ProfileSettings>...</ProfileSettings>
+        </PostTitleDiv>
+
+        <PostImageDiv src={PostImageThree} alt="" />
         <PostFooterDiv>
           <PostFooterIconDiv>Icons</PostFooterIconDiv>
           <PostFooterTextDiv>
@@ -79,7 +112,6 @@ const Posts = () => {
           </PostFooterTextDiv>
         </PostFooterDiv>
       </PostContainerDiv>
-      ;
     </PostsContainerDiv>
   );
 };
