@@ -6,23 +6,14 @@ export const OutterContainerDiv = styled.div`
   color: white;
 `;
 
-export const HeaderContainerDiv = styled.div`
-  display: flex;
-  justify-content: center;
-  position: fixed;
-  top: 0;
-  width: 100vw;
-  height: 3rem;
-  background: #252525;
-  color: white;
-`;
-
 export const StoriesContainerDiv = styled.div`
   position: relative;
   display: flex;
   justify-content: center;
   width: 100vw;
   height: 5rem;
+  border-bottom: 1px solid #cccccc;
+  border-width: 0.01em;
 `;
 
 export const PostsContainerDiv = styled.div`
@@ -43,6 +34,33 @@ export const ScrollableContainerDiv = styled.div`
   width: 100vw;
 `;
 
+// Top Bar
+
+export const HeaderContainerDiv = styled.div`
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 3rem;
+  background: #252525;
+  color: white;
+`;
+
+export const HeaderIconDiv = styled.div`
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+`;
+
+export const HeaderIconImage = styled.img`
+  max-width: 10%;
+  height: 80%;
+  padding: 0.4em 0 0 0.3em;
+`;
+
+// Bottom Bar
+
 export const BottomContainerDiv = styled.div`
   display: flex;
   justify-content: center;
@@ -52,4 +70,10 @@ export const BottomContainerDiv = styled.div`
   height: 3rem;
   background: #252525;
   color: white;
+`;
+
+export const BottomIconDiv = styled.div`
+  display: flex;
+  justify-content: space-around;
+  width: 100vw;
 `;

@@ -1,24 +1,25 @@
 import React from "react";
 
+import HeaderBar from "./HeaderBar";
+import BottomBar from "./BottomBar";
+
 import {
   OutterContainerDiv,
-  HeaderContainerDiv,
   StoriesContainerDiv,
   ScrollableContainerDiv,
   PostsContainerDiv,
-  BottomContainerDiv,
 } from "./Home.styles";
 
 const Home = () => {
   return (
     <>
       <OutterContainerDiv>
-        <HeaderContainerDiv>Instagram</HeaderContainerDiv>
+        <HeaderBar />
         <ScrollableContainerDiv>
           <StoriesContainerDiv>Stories</StoriesContainerDiv>
           <PostsContainerDiv>Posts</PostsContainerDiv>
         </ScrollableContainerDiv>
-        <BottomContainerDiv>Bottom</BottomContainerDiv>
+        <BottomBar />
       </OutterContainerDiv>
     </>
   );
