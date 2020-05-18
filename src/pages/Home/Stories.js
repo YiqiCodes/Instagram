@@ -13,9 +13,9 @@ import {
 const Stories = () => {
   return (
     <StoriesContainerDiv>
-      <StoryContainerDiv>
+      <StoryContainerDiv style={{ paddingLeft: "5px" }}>
         <StoryIconImage src={YiqiIcon} alt="" />
-        <StoryHandleDiv>natgeo</StoryHandleDiv>
+        <StoryHandleDiv>Your Story</StoryHandleDiv>
       </StoryContainerDiv>
       <StoryContainerDiv>
         <StoryIconImage src={NatGeoIcon} alt="" />
