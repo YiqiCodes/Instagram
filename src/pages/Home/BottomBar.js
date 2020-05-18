@@ -4,6 +4,7 @@ import HomeIcon from "../../assets/img/Home.png";
 import SearchIcon from "../../assets/img/Search.png";
 import LikeIcon from "../../assets/img/Heart.png";
 import AddIcon from "../../assets/img/Add.png";
+import YiqiIcon from "../../assets/img/Yiqi.jpg";
 
 import {
   BottomContainerDiv,
@@ -29,7 +30,11 @@ const BottomBar = () => {
           <BottomIconImage src={LikeIcon} alt="" />
         </IconContainerDiv>
         <IconContainerDiv>
-          <BottomIconImage src={HomeIcon} alt="" />
+          <BottomIconImage
+            style={{ height: "30px", width: "30px", borderRadius: "50%" }}
+            src={YiqiIcon}
+            alt=""
+          />
         </IconContainerDiv>
       </BottomIconDiv>
     </BottomContainerDiv>
