@@ -3,7 +3,7 @@ import React from "react";
 import PostImageOne from "../../assets/img/PostOne.JPG";
 import PostImageTwo from "../../assets/img/PostTwo.JPG";
 import PostImageThree from "../../assets/img/PostThree.JPG";
-import ProfilePic from "../../assets/img/Yiqi.jpg";
+import ProfilePic from "../../assets/img/StoryYiqi.png";
 import LikeIcon from "../../assets/img/Heart.png";
 import CommentIcon from "../../assets/img/Comment.png";
 import MessageIcon from "../../assets/img/Message.png";
@@ -23,10 +23,8 @@ import {
   PostFooterLikedByDiv,
   PostFooterCaptionDiv,
   PostFooterViewAllCommentsDiv,
-  // PostFooterAddCommentDiv,
   PostFooterTimeDiv,
   BottomIconImage,
-  // IconContainerDiv,
 } from "./Home.styles";
 
 const Posts = () => {
