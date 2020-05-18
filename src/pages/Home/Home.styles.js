@@ -7,6 +7,8 @@ export const OutterContainerDiv = styled.div`
 `;
 
 export const StoriesContainerDiv = styled.div`
+  overflow: auto;
+  white-space: nowrap;
   position: relative;
   display: flex;
   justify-content: center;
@@ -81,6 +83,28 @@ export const IconContainerDiv = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+`;
+
+//Stories Styles
+
+export const StoryContainerDiv = styled.div`
+  width: 25%;
+  min-width: 20vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const StoryHandleDiv = styled.div`
+  padding-bottom: 5px;
+`;
+
+export const StoryIconImage = styled.img`
+  max-width: 3rem;
+  height: 60%;
+  padding: 0.3em;
+  padding: 0;
 `;
 
 // Posts Styles
