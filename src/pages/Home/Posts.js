@@ -45,7 +45,7 @@ const Posts = () => {
         <PostImageDiv src={PostImageTwo} alt="" />
         <PostFooterDiv>
           <PostFooterIconDiv>
-            <div style={{ height: "100%" }}>
+            <div style={{ display: "flex", height: "100%" }}>
               <BottomIconImage src={LikeIcon} alt="" />
               <BottomIconImage src={CommentIcon} alt="" />
               <BottomIconImage src={MessageIcon} alt="" />
@@ -81,7 +81,7 @@ const Posts = () => {
         <PostImageDiv src={PostImageOne} alt="" />
         <PostFooterDiv>
           <PostFooterIconDiv>
-            <div style={{ height: "100%" }}>
+            <div style={{ display: "flex", height: "100%" }}>
               <BottomIconImage src={LikeIcon} alt="" />
               <BottomIconImage src={CommentIcon} alt="" />
               <BottomIconImage src={MessageIcon} alt="" />
@@ -119,7 +119,7 @@ const Posts = () => {
         <PostImageDiv src={PostImageThree} alt="" />
         <PostFooterDiv>
           <PostFooterIconDiv>
-            <div style={{ height: "100%" }}>
+            <div style={{ display: "flex", height: "100%" }}>
               <BottomIconImage src={LikeIcon} alt="" />
               <BottomIconImage src={CommentIcon} alt="" />
               <BottomIconImage src={MessageIcon} alt="" />
