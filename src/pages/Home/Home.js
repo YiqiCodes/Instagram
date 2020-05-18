@@ -3,11 +3,8 @@ import React from "react";
 import HeaderBar from "./HeaderBar";
 import BottomBar from "./BottomBar";
 import Posts from "./Posts";
-import {
-  OutterContainerDiv,
-  StoriesContainerDiv,
-  ScrollableContainerDiv,
-} from "./Home.styles";
+import Stories from "./Stories";
+import { OutterContainerDiv, ScrollableContainerDiv } from "./Home.styles";
 
 const Home = () => {
   return (
@@ -15,8 +12,8 @@ const Home = () => {
       <OutterContainerDiv>
         <HeaderBar />
         <ScrollableContainerDiv>
-          <StoriesContainerDiv>Story Story Story Story</StoriesContainerDiv>
-          <Posts></Posts>
+          <Stories />
+          <Posts />
         </ScrollableContainerDiv>
         <BottomBar />
       </OutterContainerDiv>
