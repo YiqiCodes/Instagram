@@ -2,7 +2,7 @@ import React from "react";
 
 import HomeIcon from "../../assets/img/Home.png";
 import SearchIcon from "../../assets/img/Search.png";
-import LikeIcon from "../../assets/img/Like.png";
+import LikeIcon from "../../assets/img/Heart.png";
 import AddIcon from "../../assets/img/Add.png";
 
 import {

@@ -4,6 +4,10 @@ import PostImageOne from "../../assets/img/PostOne.JPG";
 import PostImageTwo from "../../assets/img/PostTwo.JPG";
 import PostImageThree from "../../assets/img/PostThree.JPG";
 import ProfilePic from "../../assets/img/Yiqi.jpg";
+import LikeIcon from "../../assets/img/Heart.png";
+import CommentIcon from "../../assets/img/Comment.png";
+import MessageIcon from "../../assets/img/Message.png";
+import SaveIcon from "../../assets/img/Save.png";
 import {
   PostsContainerDiv,
   PostContainerDiv,
@@ -19,8 +23,10 @@ import {
   PostFooterLikedByDiv,
   PostFooterCaptionDiv,
   PostFooterViewAllCommentsDiv,
-  PostFooterAddCommentDiv,
+  // PostFooterAddCommentDiv,
   PostFooterTimeDiv,
+  BottomIconImage,
+  // IconContainerDiv,
 } from "./Home.styles";
 
 const Posts = () => {
@@ -38,18 +44,25 @@ const Posts = () => {
 
         <PostImageDiv src={PostImageTwo} alt="" />
         <PostFooterDiv>
-          <PostFooterIconDiv>Icons</PostFooterIconDiv>
+          <PostFooterIconDiv>
+            <div style={{ height: "100%" }}>
+              <BottomIconImage src={LikeIcon} alt="" />
+              <BottomIconImage src={CommentIcon} alt="" />
+              <BottomIconImage src={MessageIcon} alt="" />
+            </div>
+            <div style={{ height: "100%", paddingRight: "5px" }}>
+              <BottomIconImage src={SaveIcon} alt="" />
+            </div>
+          </PostFooterIconDiv>
           <PostFooterTextDiv>
             <PostFooterLikedByDiv>
               Liked by TestUser and others
             </PostFooterLikedByDiv>
-            <PostFooterCaptionDiv>
-              This is my photo caption ... more
-            </PostFooterCaptionDiv>
+            <PostFooterCaptionDiv>zhangyiqi immersion</PostFooterCaptionDiv>
             <PostFooterViewAllCommentsDiv>
               View all 17 comments
             </PostFooterViewAllCommentsDiv>
-            <PostFooterAddCommentDiv>Add a comment...</PostFooterAddCommentDiv>
+            {/* <PostFooterAddCommentDiv>Add a comment...</PostFooterAddCommentDiv> */}
             <PostFooterTimeDiv>11 minutes ago</PostFooterTimeDiv>
           </PostFooterTextDiv>
         </PostFooterDiv>
@@ -67,19 +80,28 @@ const Posts = () => {
 
         <PostImageDiv src={PostImageOne} alt="" />
         <PostFooterDiv>
-          <PostFooterIconDiv>Icons</PostFooterIconDiv>
+          <PostFooterIconDiv>
+            <div style={{ height: "100%" }}>
+              <BottomIconImage src={LikeIcon} alt="" />
+              <BottomIconImage src={CommentIcon} alt="" />
+              <BottomIconImage src={MessageIcon} alt="" />
+            </div>
+            <div style={{ height: "100%", paddingRight: "5px" }}>
+              <BottomIconImage src={SaveIcon} alt="" />
+            </div>
+          </PostFooterIconDiv>
           <PostFooterTextDiv>
             <PostFooterLikedByDiv>
               Liked by TestUser and others
             </PostFooterLikedByDiv>
             <PostFooterCaptionDiv>
-              This is my photo caption ... more
+              zhangyiqi oh i forgot it's summertime
             </PostFooterCaptionDiv>
             <PostFooterViewAllCommentsDiv>
-              View all 17 comments
+              View all 21 comments
             </PostFooterViewAllCommentsDiv>
-            <PostFooterAddCommentDiv>Add a comment...</PostFooterAddCommentDiv>
-            <PostFooterTimeDiv>11 minutes ago</PostFooterTimeDiv>
+            {/* <PostFooterAddCommentDiv>Add a comment...</PostFooterAddCommentDiv> */}
+            <PostFooterTimeDiv>2 hours ago</PostFooterTimeDiv>
           </PostFooterTextDiv>
         </PostFooterDiv>
       </PostContainerDiv>
@@ -96,19 +118,28 @@ const Posts = () => {
 
         <PostImageDiv src={PostImageThree} alt="" />
         <PostFooterDiv>
-          <PostFooterIconDiv>Icons</PostFooterIconDiv>
+          <PostFooterIconDiv>
+            <div style={{ height: "100%" }}>
+              <BottomIconImage src={LikeIcon} alt="" />
+              <BottomIconImage src={CommentIcon} alt="" />
+              <BottomIconImage src={MessageIcon} alt="" />
+            </div>
+            <div style={{ height: "100%", paddingRight: "5px" }}>
+              <BottomIconImage src={SaveIcon} alt="" />
+            </div>
+          </PostFooterIconDiv>
           <PostFooterTextDiv>
             <PostFooterLikedByDiv>
               Liked by TestUser and others
             </PostFooterLikedByDiv>
             <PostFooterCaptionDiv>
-              This is my photo caption ... more
+              zhangyiqi home is canada
             </PostFooterCaptionDiv>
             <PostFooterViewAllCommentsDiv>
-              View all 17 comments
+              View all 6 comments
             </PostFooterViewAllCommentsDiv>
-            <PostFooterAddCommentDiv>Add a comment...</PostFooterAddCommentDiv>
-            <PostFooterTimeDiv>11 minutes ago</PostFooterTimeDiv>
+            {/* <PostFooterAddCommentDiv>Add a comment...</PostFooterAddCommentDiv> */}
+            <PostFooterTimeDiv>8 hours ago</PostFooterTimeDiv>
           </PostFooterTextDiv>
         </PostFooterDiv>
       </PostContainerDiv>
