@@ -1,7 +1,11 @@
 import React from "react";
 
-import YiqiIcon from "../../assets/img/Yiqi.jpg";
-import NatGeoIcon from "../../assets/img/NatGeo.jpg";
+import StoryYiqi from "../../assets/img/StoryYiqi.png";
+import StoryInstagram from "../../assets/img/StoryInsta.png";
+import StoryCB from "../../assets/img/StoryCB.png";
+import StoryBanksy from "../../assets/img/StoryBanksy.png";
+import StoryLR from "../../assets/img/StoryLR.png";
+import StoryEmilie from "../../assets/img/StoryEmilie.png";
 
 import {
   StoriesContainerDiv,
@@ -11,40 +15,24 @@ import {
 } from "./Home.styles";
 
 const Stories = () => {
+  const storyDetails = {
+    "Your Story": StoryYiqi,
+    chrisburkard: StoryCB,
+    instagram: StoryInstagram,
+    banksy: StoryBanksy,
+    lightroom: StoryLR,
+    helloemilie: StoryEmilie,
+  };
   return (
     <StoriesContainerDiv>
-      <StoryContainerDiv style={{ paddingLeft: "5px" }}>
-        <StoryIconImage src={YiqiIcon} alt="" />
-        <StoryHandleDiv>Your Story</StoryHandleDiv>
-      </StoryContainerDiv>
-      <StoryContainerDiv>
-        <StoryIconImage src={NatGeoIcon} alt="" />
-        <StoryHandleDiv>natgeo</StoryHandleDiv>
-      </StoryContainerDiv>
-      <StoryContainerDiv>
-        <StoryIconImage src={NatGeoIcon} alt="" />
-        <StoryHandleDiv>natgeo</StoryHandleDiv>
-      </StoryContainerDiv>
-      <StoryContainerDiv>
-        <StoryIconImage src={NatGeoIcon} alt="" />
-        <StoryHandleDiv>natgeo</StoryHandleDiv>
-      </StoryContainerDiv>
-      <StoryContainerDiv>
-        <StoryIconImage src={NatGeoIcon} alt="" />
-        <StoryHandleDiv>natgeo</StoryHandleDiv>
-      </StoryContainerDiv>
-      <StoryContainerDiv>
-        <StoryIconImage src={NatGeoIcon} alt="" />
-        <StoryHandleDiv>natgeo</StoryHandleDiv>
-      </StoryContainerDiv>
-      <StoryContainerDiv>
-        <StoryIconImage src={NatGeoIcon} alt="" />
-        <StoryHandleDiv>natgeo</StoryHandleDiv>
-      </StoryContainerDiv>
-      <StoryContainerDiv>
-        <StoryIconImage src={NatGeoIcon} alt="" />
-        <StoryHandleDiv>natgeo</StoryHandleDiv>
-      </StoryContainerDiv>
+      {Object.entries(storyDetails).map(function (key) {
+        return (
+          <StoryContainerDiv>
+            <StoryIconImage src={key[1]} alt="" />
+            <StoryHandleDiv>{key[0]}</StoryHandleDiv>
+          </StoryContainerDiv>
+        );
+      })}
     </StoriesContainerDiv>
   );
 };

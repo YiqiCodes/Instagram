@@ -94,6 +94,7 @@ export const StoryContainerDiv = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 0px 4px;
 `;
 
 export const StoryHandleDiv = styled.div`
@@ -103,7 +104,7 @@ export const StoryHandleDiv = styled.div`
 
 export const StoryIconImage = styled.img`
   max-width: 3rem;
-  height: 60%;
+  height: 65%;
   padding: 0.3em;
   padding: 0;
 `;
@@ -135,10 +136,11 @@ export const ProfilePictureDiv = styled.img`
 export const ProfileNameDiv = styled.div`
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: end;
   height: 100%;
   width: 80%;
   font-weight: 600;
+  padding-left: 8px;
 `;
 
 export const ProfileSettings = styled.div`
@@ -168,6 +170,7 @@ export const PostTitleDiv = styled.div`
 `;
 
 export const PostImageDiv = styled.img`
+  width: 100vw;
   height: 60vh;
   background: aqua;
 `;
