@@ -11,7 +11,7 @@ export const StoriesContainerDiv = styled.div`
   white-space: nowrap;
   position: relative;
   display: flex;
-  justify-content: center;
+  justify-content: normal;
   width: 100vw;
   height: 5rem;
   border-bottom: 1px solid #cccccc;
@@ -98,6 +98,7 @@ export const StoryContainerDiv = styled.div`
 
 export const StoryHandleDiv = styled.div`
   padding-bottom: 5px;
+  font-size: small;
 `;
 
 export const StoryIconImage = styled.img`
