@@ -153,8 +153,11 @@ export const PostFooterDiv = styled.div`
 `;
 
 export const PostFooterIconDiv = styled.div`
+  display: flex;
+  justify-content: space-between;
   height: 5vh;
-  background: brown;
+  background: black;
+  padding-left: 6px;
 `;
 
 export const PostFooterTextDiv = styled.div`
@@ -163,17 +166,21 @@ export const PostFooterTextDiv = styled.div`
 `;
 
 export const PostFooterLikedByDiv = styled.div`
-  height: 5vh;
-  background: gray;
+  height: 2.5vh;
+  background: black;
+  padding: 2px 2px 5px 10px;
 `;
 
 export const PostFooterCaptionDiv = styled.div`
-  height: 5vh;
-  background: brown;
+  height: 2.5vh;
+  background: black;
+  padding: 2px 2px 5px 10px;
 `;
 export const PostFooterViewAllCommentsDiv = styled.div`
   height: 3vh;
-  background: gray;
+  background: black;
+  color: gray;
+  padding: 2px 2px 5px 10px;
 `;
 export const PostFooterAddCommentDiv = styled.div`
   height: 5vh;
@@ -182,5 +189,8 @@ export const PostFooterAddCommentDiv = styled.div`
 
 export const PostFooterTimeDiv = styled.div`
   height: 2.5vh;
-  background: green;
+  background: black;
+  color: gray;
+  padding: 2px 2px 5px 10px;
+  font-size: small;
 `;
