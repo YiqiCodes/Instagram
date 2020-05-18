@@ -94,11 +94,12 @@ export const StoryContainerDiv = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0px 4px;
+  padding: 2px 4px;
 `;
 
 export const StoryHandleDiv = styled.div`
   padding-bottom: 5px;
+  padding-top: 2px;
   font-size: small;
 `;
 

@@ -19,9 +19,9 @@ const Stories = () => {
     "Your Story": StoryYiqi,
     chrisburkard: StoryCB,
     instagram: StoryInstagram,
+    helloemilie: StoryEmilie,
     banksy: StoryBanksy,
     lightroom: StoryLR,
-    helloemilie: StoryEmilie,
   };
   return (
     <StoriesContainerDiv>
