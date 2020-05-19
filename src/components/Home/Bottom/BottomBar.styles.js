@@ -9,12 +9,18 @@ export const BottomContainerDiv = styled.div`
   height: 3rem;
   background: #252525;
   color: white;
+  @media screen and (min-width: 376px) {
+    width: 375px;
+  }
 `;
 
 export const BottomIconDiv = styled.div`
   display: flex;
   justify-content: space-around;
   width: 100vw;
+  @media screen and (min-width: 376px) {
+    width: 375px;
+  }
 `;
 
 export const BottomIconImage = styled.img`

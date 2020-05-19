@@ -9,12 +9,18 @@ export const HeaderContainerDiv = styled.div`
   height: 3rem;
   background: #252525;
   color: white;
+  @media screen and (min-width: 376px) {
+    width: 375px;
+  }
 `;
 
 export const HeaderIconDiv = styled.div`
   display: flex;
   justify-content: space-between;
   width: 100vw;
+  @media screen and (min-width: 376px) {
+    width: 375px;
+  }
 `;
 
 export const HeaderIconImage = styled.img`
