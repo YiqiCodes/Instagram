@@ -10,6 +10,9 @@ export const StoriesContainerDiv = styled.div`
   height: 5rem;
   border-bottom: 1px solid #cccccc;
   border-width: 0.01em;
+  @media screen and (min-width: 376px) {
+    width: 375px;
+  }
 `;
 
 export const StoryContainerDiv = styled.div`

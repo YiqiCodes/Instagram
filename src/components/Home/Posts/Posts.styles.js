@@ -65,6 +65,7 @@ export const PostImageDiv = styled.div`
   @media screen and (min-width: 376px) {
     background: black;
     justify-content: center;
+    width: 375px;
   }
 `;
 export const PostImage = styled.img`

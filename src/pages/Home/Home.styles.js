@@ -18,4 +18,7 @@ export const ScrollableContainerDiv = styled.div`
   min-height: 88.3vh;
   width: 375px;
   overflow-y: scroll;
+  @media screen and (min-width: 376px) {
+    width: 375px;
+  }
 `;
