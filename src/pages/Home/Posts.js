@@ -19,6 +19,8 @@ import {
   ProfileSettings,
   PostFooterDiv,
   PostFooterIconDiv,
+  PostFooterLeftDiv,
+  PostFooterRightDiv,
   PostFooterTextDiv,
   PostFooterLikedByDiv,
   PostFooterCaptionDiv,
@@ -28,119 +30,80 @@ import {
 } from "./Home.styles";
 
 const Posts = () => {
+  const postContents = [
+    {
+      username: "zhangyiqi",
+      profilePicture: ProfilePic,
+      postImage: PostImageTwo,
+      likedBy: "banksy and 918 others",
+      caption: "immersion",
+      totalComments: 17,
+      timeStamp: "11 minutes ago",
+    },
+    {
+      username: "zhangyiqi",
+      profilePicture: ProfilePic,
+      postImage: PostImageOne,
+      likedBy: "instagram and 841 others",
+      caption: "oh i forgot it's summertime",
+      totalComments: 21,
+      timeStamp: "2 hours ago",
+    },
+    {
+      username: "zhangyiqi",
+      profilePicture: ProfilePic,
+      postImage: PostImageThree,
+      likedBy: "natgeo and 1039 others",
+      caption: "home is canada",
+      totalComments: 6,
+      timeStamp: "8 hours ago",
+    },
+  ];
+
   return (
     <PostsContainerDiv>
-      {/*First Post*/}
-      <PostContainerDiv>
-        <PostTitleDiv>
-          <PostTitleLeft>
-            <ProfilePictureDiv src={ProfilePic} alt=""></ProfilePictureDiv>
-            <ProfileNameDiv>zhangyiqi</ProfileNameDiv>
-          </PostTitleLeft>
-          <ProfileSettings>...</ProfileSettings>
-        </PostTitleDiv>
+      {postContents.map((post) => {
+        return (
+          <PostContainerDiv>
+            <PostTitleDiv>
+              <PostTitleLeft>
+                <ProfilePictureDiv
+                  src={post.profilePicture}
+                  alt=""
+                ></ProfilePictureDiv>
+                <ProfileNameDiv>{post.username}</ProfileNameDiv>
+              </PostTitleLeft>
+              <ProfileSettings>...</ProfileSettings>
+            </PostTitleDiv>
 
-        <PostImageDiv src={PostImageTwo} alt="" />
-        <PostFooterDiv>
-          <PostFooterIconDiv>
-            <div style={{ display: "flex", height: "100%" }}>
-              <BottomIconImage src={LikeIcon} alt="" />
-              <BottomIconImage src={CommentIcon} alt="" />
-              <BottomIconImage src={MessageIcon} alt="" />
-            </div>
-            <div style={{ height: "100%", paddingRight: "5px" }}>
-              <BottomIconImage src={SaveIcon} alt="" />
-            </div>
-          </PostFooterIconDiv>
-          <PostFooterTextDiv>
-            <PostFooterLikedByDiv>
-              Liked by TestUser and others
-            </PostFooterLikedByDiv>
-            <PostFooterCaptionDiv>zhangyiqi immersion</PostFooterCaptionDiv>
-            <PostFooterViewAllCommentsDiv>
-              View all 17 comments
-            </PostFooterViewAllCommentsDiv>
-            {/* <PostFooterAddCommentDiv>Add a comment...</PostFooterAddCommentDiv> */}
-            <PostFooterTimeDiv>11 minutes ago</PostFooterTimeDiv>
-          </PostFooterTextDiv>
-        </PostFooterDiv>
-      </PostContainerDiv>
-
-      {/*Second Post*/}
-      <PostContainerDiv>
-        <PostTitleDiv>
-          <PostTitleLeft>
-            <ProfilePictureDiv src={ProfilePic} alt=""></ProfilePictureDiv>
-            <ProfileNameDiv>zhangyiqi</ProfileNameDiv>
-          </PostTitleLeft>
-          <ProfileSettings>...</ProfileSettings>
-        </PostTitleDiv>
-
-        <PostImageDiv src={PostImageOne} alt="" />
-        <PostFooterDiv>
-          <PostFooterIconDiv>
-            <div style={{ display: "flex", height: "100%" }}>
-              <BottomIconImage src={LikeIcon} alt="" />
-              <BottomIconImage src={CommentIcon} alt="" />
-              <BottomIconImage src={MessageIcon} alt="" />
-            </div>
-            <div style={{ height: "100%", paddingRight: "5px" }}>
-              <BottomIconImage src={SaveIcon} alt="" />
-            </div>
-          </PostFooterIconDiv>
-          <PostFooterTextDiv>
-            <PostFooterLikedByDiv>
-              Liked by TestUser and others
-            </PostFooterLikedByDiv>
-            <PostFooterCaptionDiv>
-              zhangyiqi oh i forgot it's summertime
-            </PostFooterCaptionDiv>
-            <PostFooterViewAllCommentsDiv>
-              View all 21 comments
-            </PostFooterViewAllCommentsDiv>
-            {/* <PostFooterAddCommentDiv>Add a comment...</PostFooterAddCommentDiv> */}
-            <PostFooterTimeDiv>2 hours ago</PostFooterTimeDiv>
-          </PostFooterTextDiv>
-        </PostFooterDiv>
-      </PostContainerDiv>
-
-      {/*Third Post*/}
-      <PostContainerDiv>
-        <PostTitleDiv>
-          <PostTitleLeft>
-            <ProfilePictureDiv src={ProfilePic} alt=""></ProfilePictureDiv>
-            <ProfileNameDiv>zhangyiqi</ProfileNameDiv>
-          </PostTitleLeft>
-          <ProfileSettings>...</ProfileSettings>
-        </PostTitleDiv>
-
-        <PostImageDiv src={PostImageThree} alt="" />
-        <PostFooterDiv>
-          <PostFooterIconDiv>
-            <div style={{ display: "flex", height: "100%" }}>
-              <BottomIconImage src={LikeIcon} alt="" />
-              <BottomIconImage src={CommentIcon} alt="" />
-              <BottomIconImage src={MessageIcon} alt="" />
-            </div>
-            <div style={{ height: "100%", paddingRight: "5px" }}>
-              <BottomIconImage src={SaveIcon} alt="" />
-            </div>
-          </PostFooterIconDiv>
-          <PostFooterTextDiv>
-            <PostFooterLikedByDiv>
-              Liked by TestUser and others
-            </PostFooterLikedByDiv>
-            <PostFooterCaptionDiv>
-              zhangyiqi home is canada
-            </PostFooterCaptionDiv>
-            <PostFooterViewAllCommentsDiv>
-              View all 6 comments
-            </PostFooterViewAllCommentsDiv>
-            {/* <PostFooterAddCommentDiv>Add a comment...</PostFooterAddCommentDiv> */}
-            <PostFooterTimeDiv>8 hours ago</PostFooterTimeDiv>
-          </PostFooterTextDiv>
-        </PostFooterDiv>
-      </PostContainerDiv>
+            <PostImageDiv src={post.postImage} alt="" />
+            <PostFooterDiv>
+              <PostFooterIconDiv>
+                <PostFooterLeftDiv>
+                  <BottomIconImage src={LikeIcon} alt="" />
+                  <BottomIconImage src={CommentIcon} alt="" />
+                  <BottomIconImage src={MessageIcon} alt="" />
+                </PostFooterLeftDiv>
+                <PostFooterRightDiv>
+                  <BottomIconImage src={SaveIcon} alt="" />
+                </PostFooterRightDiv>
+              </PostFooterIconDiv>
+              <PostFooterTextDiv>
+                <PostFooterLikedByDiv>
+                  Liked by {post.likedBy}
+                </PostFooterLikedByDiv>
+                <PostFooterCaptionDiv>
+                  {post.username} {post.caption}
+                </PostFooterCaptionDiv>
+                <PostFooterViewAllCommentsDiv>
+                  View all {post.totalComments} comments
+                </PostFooterViewAllCommentsDiv>
+                <PostFooterTimeDiv>{post.timeStamp}</PostFooterTimeDiv>
+              </PostFooterTextDiv>
+            </PostFooterDiv>
+          </PostContainerDiv>
+        );
+      })}
     </PostsContainerDiv>
   );
 };
