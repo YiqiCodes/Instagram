@@ -6,13 +6,13 @@ export const PostsContainerDiv = styled.div`
   position: absolute;
   top: 5rem;
   min-height: 78.3vh;
-  width: 100%;
+  width: 375px;
   justify-content: center;
 `;
 
 export const PostContainerDiv = styled.div`
   min-height: 80vh;
-  width: 100%;
+  width: 375px;
   background: gray;
 `;
 
@@ -60,7 +60,7 @@ export const PostTitleDiv = styled.div`
 
 export const PostImageDiv = styled.div`
   display: flex;
-  width: 100vw;
+  width: 375px;
   height: 60vh;
   @media screen and (min-width: 376px) {
     background: black;
@@ -68,7 +68,7 @@ export const PostImageDiv = styled.div`
   }
 `;
 export const PostImage = styled.img`
-  width: 100%;
+  width: 375px;
   height: 100%;
   @media screen and (min-width: 376px) {
     width: 375px;
@@ -82,7 +82,7 @@ export const PostFooterDiv = styled.div`
 export const BottomIconImage = styled.img`
   max-width: 3rem;
   height: 60%;
-  padding: 0.3em;
+  padding: 0.5em;
 `;
 
 export const PostFooterIconDiv = styled.div`
@@ -120,7 +120,7 @@ export const PostFooterCaptionDiv = styled.div`
   padding: 2px 2px 5px 10px;
 `;
 export const PostFooterViewAllCommentsDiv = styled.div`
-  height: 3vh;
+  height: 2vh;
   background: black;
   color: gray;
   padding: 2px 2px 5px 10px;

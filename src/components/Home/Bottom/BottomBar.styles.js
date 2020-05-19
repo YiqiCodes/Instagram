@@ -5,7 +5,7 @@ export const BottomContainerDiv = styled.div`
   justify-content: center;
   position: fixed;
   bottom: 0;
-  width: 100vw;
+  width: 375px;
   height: 3rem;
   background: #252525;
   color: white;
@@ -14,7 +14,7 @@ export const BottomContainerDiv = styled.div`
 export const BottomIconDiv = styled.div`
   display: flex;
   justify-content: space-around;
-  width: 100vw;
+  width: 375px;
 `;
 
 export const BottomIconImage = styled.img`
