@@ -4,7 +4,7 @@ import HomeIcon from "../../assets/img/Home.png";
 import SearchIcon from "../../assets/img/Search.png";
 import LikeIcon from "../../assets/img/Heart.png";
 import AddIcon from "../../assets/img/Add.png";
-import YiqiIcon from "../../assets/img/Yiqi.jpg";
+import ProfileIcon from "../../assets/img/StoryYiqi.png";
 
 import {
   BottomContainerDiv,
@@ -14,28 +14,15 @@ import {
 } from "./Home.styles";
 
 const BottomBar = () => {
+  const BottomIcons = [HomeIcon, SearchIcon, AddIcon, LikeIcon, ProfileIcon];
   return (
     <BottomContainerDiv>
       <BottomIconDiv>
-        <IconContainerDiv>
-          <BottomIconImage src={HomeIcon} alt="" />
-        </IconContainerDiv>
-        <IconContainerDiv>
-          <BottomIconImage src={SearchIcon} alt="" />
-        </IconContainerDiv>
-        <IconContainerDiv>
-          <BottomIconImage src={AddIcon} alt="" />
-        </IconContainerDiv>
-        <IconContainerDiv>
-          <BottomIconImage src={LikeIcon} alt="" />
-        </IconContainerDiv>
-        <IconContainerDiv>
-          <BottomIconImage
-            style={{ height: "30px", width: "30px", borderRadius: "50%" }}
-            src={YiqiIcon}
-            alt=""
-          />
-        </IconContainerDiv>
+        {BottomIcons.map((icon) => (
+          <IconContainerDiv>
+            <BottomIconImage src={icon} alt="" />
+          </IconContainerDiv>
+        ))}
       </BottomIconDiv>
     </BottomContainerDiv>
   );

@@ -25,7 +25,7 @@ const Stories = () => {
   };
   return (
     <StoriesContainerDiv>
-      {Object.entries(storyDetails).map(function (key) {
+      {Object.entries(storyDetails).map((key) => {
         return (
           <StoryContainerDiv>
             <StoryIconImage src={key[1]} alt="" />

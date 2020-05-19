@@ -173,12 +173,10 @@ export const PostTitleDiv = styled.div`
 export const PostImageDiv = styled.img`
   width: 100vw;
   height: 60vh;
-  background: aqua;
 `;
 
 export const PostFooterDiv = styled.div`
   height: 25%;
-  background: green;
 `;
 
 export const PostFooterIconDiv = styled.div`
@@ -187,6 +185,16 @@ export const PostFooterIconDiv = styled.div`
   height: 5vh;
   background: black;
   padding-left: 6px;
+`;
+
+export const PostFooterLeftDiv = styled.div`
+  display: flex;
+  height: 100%;
+`;
+
+export const PostFooterRightDiv = styled.div`
+  height: 100%;
+  padding-right: 5px;
 `;
 
 export const PostFooterTextDiv = styled.div`
@@ -213,7 +221,6 @@ export const PostFooterViewAllCommentsDiv = styled.div`
 `;
 export const PostFooterAddCommentDiv = styled.div`
   height: 5vh;
-  background: red;
 `;
 
 export const PostFooterTimeDiv = styled.div`
