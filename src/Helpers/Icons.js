@@ -29,10 +29,10 @@ import AddIcon from "../assets/img/Add.png";
 import ProfileIcon from "../assets/img/StoryYiqi.png";
 
 //Top Bar
-export const HeaderIcons = [CameraIcon, InstagramTitle, MessageIcon];
+export const headerIcons = [CameraIcon, InstagramTitle, MessageIcon];
 
 // Stories
-export const StoryIcons = [
+export const storyIcons = [
   StoryYiqi,
   StoryCB,
   StoryInstagram,
@@ -42,7 +42,7 @@ export const StoryIcons = [
 ];
 
 // Posts
-export const PostIcons = [
+export const postIcons = [
   PostImageOne,
   PostImageTwo,
   PostImageThree,
@@ -54,7 +54,7 @@ export const PostIcons = [
 ];
 
 // Bottom Bar
-export const BottomIcons = [
+export const bottomIcons = [
   HomeIcon,
   SearchIcon,
   AddIcon,
