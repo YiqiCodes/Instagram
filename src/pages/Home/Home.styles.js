@@ -4,6 +4,10 @@ export const OutterContainerDiv = styled.div`
   height: 100vh;
   background: #000000;
   color: white;
+
+  @media screen and (min-width: 376px) {
+    width: 375px;
+  }
 `;
 
 export const ScrollableContainerDiv = styled.div`
@@ -12,6 +16,6 @@ export const ScrollableContainerDiv = styled.div`
   position: absolute;
   top: 3rem;
   min-height: 88.3vh;
-  width: 100vw;
+  width: 375px;
   overflow-y: scroll;
 `;

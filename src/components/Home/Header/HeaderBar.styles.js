@@ -5,7 +5,7 @@ export const HeaderContainerDiv = styled.div`
   justify-content: center;
   position: fixed;
   top: 0;
-  width: 100vw;
+  width: 375px;
   height: 3rem;
   background: #252525;
   color: white;
@@ -14,7 +14,7 @@ export const HeaderContainerDiv = styled.div`
 export const HeaderIconDiv = styled.div`
   display: flex;
   justify-content: space-between;
-  width: 100vw;
+  width: 375px;
 `;
 
 export const HeaderIconImage = styled.img`
