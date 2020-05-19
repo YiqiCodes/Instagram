@@ -6,7 +6,7 @@ export const StoriesContainerDiv = styled.div`
   position: relative;
   display: flex;
   justify-content: normal;
-  width: 100vw;
+  width: 375px;
   height: 5rem;
   border-bottom: 1px solid #cccccc;
   border-width: 0.01em;
