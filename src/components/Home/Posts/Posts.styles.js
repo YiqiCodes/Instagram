@@ -56,6 +56,7 @@ export const PostTitleDiv = styled.div`
   justify-content: space-between;
   height: 5vh;
   background: black;
+  padding: 5px 2px;
 `;
 
 export const PostImageDiv = styled.div`
@@ -131,9 +132,9 @@ export const PostFooterAddCommentDiv = styled.div`
 `;
 
 export const PostFooterTimeDiv = styled.div`
-  height: 2.5vh;
+  height: 2vh;
   background: black;
   color: gray;
-  padding: 2px 2px 5px 10px;
+  padding: 2px 2px 10px 10px;
   font-size: small;
 `;
