@@ -1,7 +1,8 @@
 import React from "react";
 
 // Helpers
-import { PostIcons } from "../../../Helpers/Icons";
+import { postIcons } from "../../../Helpers/Icons";
+import { postContents } from "../../../Helpers/Details";
 
 // Styles
 import {
@@ -26,36 +27,6 @@ import {
 } from "./Posts.styles";
 
 const Posts = () => {
-  const postContents = [
-    {
-      username: "zhangyiqi",
-      profilePicture: PostIcons[3],
-      postImage: PostIcons[1],
-      likedBy: "banksy and 918 others",
-      caption: "immersion",
-      totalComments: 17,
-      timeStamp: "11 minutes ago",
-    },
-    {
-      username: "zhangyiqi",
-      profilePicture: PostIcons[3],
-      postImage: PostIcons[0],
-      likedBy: "instagram and 841 others",
-      caption: "oh i forgot it's summertime",
-      totalComments: 21,
-      timeStamp: "2 hours ago",
-    },
-    {
-      username: "zhangyiqi",
-      profilePicture: PostIcons[3],
-      postImage: PostIcons[2],
-      likedBy: "natgeo and 1039 others",
-      caption: "home is canada",
-      totalComments: 6,
-      timeStamp: "8 hours ago",
-    },
-  ];
-
   return (
     <PostsContainerDiv>
       {postContents.map((post) => {
@@ -76,12 +47,12 @@ const Posts = () => {
             <PostFooterDiv>
               <PostFooterIconDiv>
                 <PostFooterLeftDiv>
-                  <BottomIconImage src={PostIcons[4]} alt="" />
-                  <BottomIconImage src={PostIcons[5]} alt="" />
-                  <BottomIconImage src={PostIcons[6]} alt="" />
+                  <BottomIconImage src={postIcons[4]} alt="" />
+                  <BottomIconImage src={postIcons[5]} alt="" />
+                  <BottomIconImage src={postIcons[6]} alt="" />
                 </PostFooterLeftDiv>
                 <PostFooterRightDiv>
-                  <BottomIconImage src={PostIcons[7]} alt="" />
+                  <BottomIconImage src={postIcons[7]} alt="" />
                 </PostFooterRightDiv>
               </PostFooterIconDiv>
               <PostFooterTextDiv>

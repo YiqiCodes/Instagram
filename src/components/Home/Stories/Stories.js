@@ -1,7 +1,7 @@
 import React from "react";
 
 // Helpers
-import { StoryIcons } from "../../../Helpers/Icons";
+import { storyDetails } from "../../../Helpers/Details";
 
 // Styles
 import {
@@ -12,14 +12,6 @@ import {
 } from "./Stories.styles";
 
 const Stories = () => {
-  const storyDetails = {
-    "Your Story": StoryIcons[0],
-    chrisburkard: StoryIcons[1],
-    instagram: StoryIcons[2],
-    helloemilie: StoryIcons[3],
-    banksy: StoryIcons[4],
-    lightroom: StoryIcons[5],
-  };
   return (
     <StoriesContainerDiv>
       {Object.entries(storyDetails).map((key) => {

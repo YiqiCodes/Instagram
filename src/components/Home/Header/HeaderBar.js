@@ -1,7 +1,7 @@
 import React from "react";
 
 // Helpers
-import { HeaderIcons } from "../../../Helpers/Icons";
+import { headerIcons } from "../../../Helpers/Icons";
 
 // Styles
 import {
@@ -14,15 +14,15 @@ const HeaderBar = () => {
   return (
     <HeaderContainerDiv>
       <HeaderIconDiv>
-        <HeaderIconImage src={HeaderIcons[0]} alt="" />
+        <HeaderIconImage src={headerIcons[0]} alt="" />
         <HeaderIconImage
           style={{ maxWidth: "none" }}
-          src={HeaderIcons[1]}
+          src={headerIcons[1]}
           alt=""
         />
         <HeaderIconImage
           style={{ padding: "0.4em 0.3em 0 0" }}
-          src={HeaderIcons[2]}
+          src={headerIcons[2]}
           alt=""
         />
       </HeaderIconDiv>

@@ -1,7 +1,7 @@
 import React from "react";
 
 //Helpers
-import { BottomIcons } from "../../../Helpers/Icons";
+import { bottomIcons } from "../../../Helpers/Icons";
 
 //Styles
 import {
@@ -15,7 +15,7 @@ const BottomBar = () => {
   return (
     <BottomContainerDiv>
       <BottomIconDiv>
-        {BottomIcons.map((icon) => (
+        {bottomIcons.map((icon) => (
           <IconContainerDiv>
             <BottomIconImage src={icon} alt="" />
           </IconContainerDiv>
