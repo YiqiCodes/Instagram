@@ -1,9 +1,12 @@
 import React from "react";
 
-import HeaderBar from "./HeaderBar";
-import BottomBar from "./BottomBar";
-import Posts from "./Posts";
-import Stories from "./Stories";
+//Components
+import HeaderBar from "../../components/Home/Header/HeaderBar";
+import BottomBar from "../../components/Home/Bottom/BottomBar";
+import Posts from "../../components/Home/Posts/Posts";
+import Stories from "../../components/Home/Stories/Stories";
+
+// Styles
 import { OutterContainerDiv, ScrollableContainerDiv } from "./Home.styles";
 
 const Home = () => {

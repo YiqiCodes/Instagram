@@ -1,13 +1,9 @@
 import React from "react";
 
-import PostImageOne from "../../assets/img/PostOne.JPG";
-import PostImageTwo from "../../assets/img/PostTwo.JPG";
-import PostImageThree from "../../assets/img/PostThree.JPG";
-import ProfilePic from "../../assets/img/StoryYiqi.png";
-import LikeIcon from "../../assets/img/Heart.png";
-import CommentIcon from "../../assets/img/Comment.png";
-import MessageIcon from "../../assets/img/Message.png";
-import SaveIcon from "../../assets/img/Save.png";
+// Helpers
+import { PostIcons } from "../../../Helpers/Icons";
+
+// Styles
 import {
   PostsContainerDiv,
   PostContainerDiv,
@@ -27,14 +23,14 @@ import {
   PostFooterViewAllCommentsDiv,
   PostFooterTimeDiv,
   BottomIconImage,
-} from "./Home.styles";
+} from "./Posts.styles";
 
 const Posts = () => {
   const postContents = [
     {
       username: "zhangyiqi",
-      profilePicture: ProfilePic,
-      postImage: PostImageTwo,
+      profilePicture: PostIcons[3],
+      postImage: PostIcons[1],
       likedBy: "banksy and 918 others",
       caption: "immersion",
       totalComments: 17,
@@ -42,8 +38,8 @@ const Posts = () => {
     },
     {
       username: "zhangyiqi",
-      profilePicture: ProfilePic,
-      postImage: PostImageOne,
+      profilePicture: PostIcons[3],
+      postImage: PostIcons[0],
       likedBy: "instagram and 841 others",
       caption: "oh i forgot it's summertime",
       totalComments: 21,
@@ -51,8 +47,8 @@ const Posts = () => {
     },
     {
       username: "zhangyiqi",
-      profilePicture: ProfilePic,
-      postImage: PostImageThree,
+      profilePicture: PostIcons[3],
+      postImage: PostIcons[2],
       likedBy: "natgeo and 1039 others",
       caption: "home is canada",
       totalComments: 6,
@@ -80,12 +76,12 @@ const Posts = () => {
             <PostFooterDiv>
               <PostFooterIconDiv>
                 <PostFooterLeftDiv>
-                  <BottomIconImage src={LikeIcon} alt="" />
-                  <BottomIconImage src={CommentIcon} alt="" />
-                  <BottomIconImage src={MessageIcon} alt="" />
+                  <BottomIconImage src={PostIcons[4]} alt="" />
+                  <BottomIconImage src={PostIcons[5]} alt="" />
+                  <BottomIconImage src={PostIcons[6]} alt="" />
                 </PostFooterLeftDiv>
                 <PostFooterRightDiv>
-                  <BottomIconImage src={SaveIcon} alt="" />
+                  <BottomIconImage src={PostIcons[7]} alt="" />
                 </PostFooterRightDiv>
               </PostFooterIconDiv>
               <PostFooterTextDiv>
