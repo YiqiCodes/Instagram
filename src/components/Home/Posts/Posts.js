@@ -12,6 +12,7 @@ import {
   ProfilePictureDiv,
   ProfileNameDiv,
   PostTitleLeft,
+  PostImage,
   PostImageDiv,
   ProfileSettings,
   PostFooterDiv,
@@ -43,7 +44,9 @@ const Posts = () => {
               <ProfileSettings>...</ProfileSettings>
             </PostTitleDiv>
 
-            <PostImageDiv src={post.postImage} alt="" />
+            <PostImageDiv>
+              <PostImage src={post.postImage} alt="" />
+            </PostImageDiv>
             <PostFooterDiv>
               <PostFooterIconDiv>
                 <PostFooterLeftDiv>

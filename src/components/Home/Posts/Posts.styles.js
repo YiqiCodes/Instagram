@@ -58,9 +58,21 @@ export const PostTitleDiv = styled.div`
   background: black;
 `;
 
-export const PostImageDiv = styled.img`
+export const PostImageDiv = styled.div`
+  display: flex;
   width: 100vw;
   height: 60vh;
+  @media screen and (min-width: 376px) {
+    background: black;
+    justify-content: center;
+  }
+`;
+export const PostImage = styled.img`
+  width: 100%;
+  height: 100%;
+  @media screen and (min-width: 376px) {
+    width: 375px;
+  }
 `;
 
 export const PostFooterDiv = styled.div`
