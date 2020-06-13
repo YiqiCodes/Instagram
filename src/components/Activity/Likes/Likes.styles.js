@@ -9,9 +9,14 @@ export const LikeContentDiv = styled.div`
   display: flex;
   width: 100%;
   height: 2.5rem;
-  background: red;
+  background: black;
   padding: 4px 0px;
   margin: 2px 0px;
+`;
+
+export const LikerImg = styled.img`
+  height: 100%;
+  width: 100%;
 `;
 export const LikerIcon = styled.div`
   display: flex;
