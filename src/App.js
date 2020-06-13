@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.css";
 
 import Home from "./pages/Home/Home";
+import Camera from "./pages/Camera/Camera";
 import Activity from "./pages/Activity/Activity";
 
 function App() {
@@ -14,6 +15,9 @@ function App() {
         </Route>
         <Route exact path="/activity">
           <Activity />
+        </Route>
+        <Route exact path="/camera">
+          <Camera />
         </Route>
       </Switch>
     </Router>

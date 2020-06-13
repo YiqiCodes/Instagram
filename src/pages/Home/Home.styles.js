@@ -23,3 +23,15 @@ export const ScrollableContainerDiv = styled.div`
     width: 375px;
   }
 `;
+
+export const ContentNotAvailable = styled.div`
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+  flex-direction: column;
+  padding: 2px;
+`;

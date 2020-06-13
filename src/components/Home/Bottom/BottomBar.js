@@ -27,7 +27,9 @@ const BottomBar = () => {
           <BottomIconImage src={bottomIcons[1]} alt="" />
         </IconContainerDiv>
         <IconContainerDiv>
-          <BottomIconImage src={bottomIcons[2]} alt="" />
+          <Link to="/camera" style={linkStyles}>
+            <BottomIconImage src={bottomIcons[2]} alt="" />
+          </Link>
         </IconContainerDiv>
         <IconContainerDiv>
           <Link to="/activity" style={linkStyles}>
