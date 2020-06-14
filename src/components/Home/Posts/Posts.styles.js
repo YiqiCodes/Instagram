@@ -8,6 +8,7 @@ export const PostsContainerDiv = styled.div`
   min-height: 78.3vh;
   width: 375px;
   justify-content: center;
+  margin-bottom: 2rem;
 `;
 
 export const PostContainerDiv = styled.div`
