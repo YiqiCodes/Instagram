@@ -40,3 +40,21 @@ export const postContents = [
     timeStamp: "8 hours ago",
   },
 ];
+
+// Search
+
+export const channels = [
+  "IGTV",
+  "Shop",
+  "Travel",
+  "Architecture",
+  "Food",
+  "Art",
+  "Style",
+  "Music",
+  "TV & Movies",
+  "DIY",
+  "Comics",
+  "Auto",
+  "Sports",
+];

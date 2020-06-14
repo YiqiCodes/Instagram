@@ -19,6 +19,7 @@ const Camera = () => {
             href="https://www.instagram.com/zhangyiqi"
             target="_blank"
             style={{ color: "blue" }}
+            rel="noopener noreferrer"
           >
             @zhangyiqi
           </a>

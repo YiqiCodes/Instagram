@@ -24,7 +24,9 @@ const BottomBar = () => {
           </Link>
         </IconContainerDiv>
         <IconContainerDiv>
-          <BottomIconImage src={bottomIcons[1]} alt="" />
+          <Link to="/search" style={linkStyles}>
+            <BottomIconImage src={bottomIcons[1]} alt="" />
+          </Link>
         </IconContainerDiv>
         <IconContainerDiv>
           <Link to="/camera" style={linkStyles}>

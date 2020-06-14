@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.css";
 
 import Home from "./pages/Home/Home";
+import Search from "./pages/Search/Search";
 import Camera from "./pages/Camera/Camera";
 import Activity from "./pages/Activity/Activity";
 
@@ -13,11 +14,14 @@ function App() {
         <Route exact path="/">
           <Home />
         </Route>
-        <Route exact path="/activity">
-          <Activity />
+        <Route exact path="/search">
+          <Search />
         </Route>
         <Route exact path="/camera">
           <Camera />
+        </Route>
+        <Route exact path="/activity">
+          <Activity />
         </Route>
       </Switch>
     </Router>
