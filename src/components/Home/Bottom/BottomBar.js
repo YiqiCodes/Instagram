@@ -39,7 +39,9 @@ const BottomBar = () => {
           </Link>
         </IconContainerDiv>
         <IconContainerDiv>
-          <BottomIconImage src={bottomIcons[4]} alt="" />
+          <Link to="/profile" style={linkStyles}>
+            <BottomIconImage src={bottomIcons[4]} alt="" />
+          </Link>
         </IconContainerDiv>
       </BottomIconDiv>
     </BottomContainerDiv>

@@ -6,6 +6,7 @@ import Home from "./pages/Home/Home";
 import Search from "./pages/Search/Search";
 import Camera from "./pages/Camera/Camera";
 import Activity from "./pages/Activity/Activity";
+import Profile from "./pages/Profile/Profile";
 
 function App() {
   return (
@@ -22,6 +23,9 @@ function App() {
         </Route>
         <Route exact path="/activity">
           <Activity />
+        </Route>
+        <Route exact path="/profile">
+          <Profile />
         </Route>
       </Switch>
     </Router>
