@@ -78,6 +78,10 @@ const ProfileDetails = () => {
       <ProfileDetailsHighlights>
         <ProfileHighlightIndividualContainer>
           <ProfileHighlightImage src={Yiqi} alt="" />
+          <div>New</div>
+        </ProfileHighlightIndividualContainer>
+        <ProfileHighlightIndividualContainer>
+          <ProfileHighlightImage src={Yiqi} alt="" />
           <div>canada</div>
         </ProfileHighlightIndividualContainer>
         <ProfileHighlightIndividualContainer>
@@ -95,10 +99,6 @@ const ProfileDetails = () => {
         <ProfileHighlightIndividualContainer>
           <ProfileHighlightImage src={Yiqi} alt="" />
           <div>wallpapers</div>
-        </ProfileHighlightIndividualContainer>
-        <ProfileHighlightIndividualContainer>
-          <ProfileHighlightImage src={Yiqi} alt="" />
-          <div>iceland</div>
         </ProfileHighlightIndividualContainer>
       </ProfileDetailsHighlights>
       <ProfileDetailsIcons>

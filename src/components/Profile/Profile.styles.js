@@ -20,7 +20,7 @@ export const IconImage = styled.img`
 
 export const ProfileDetailsContainer = styled.div`
   background: #161616;
-  height: 60vh;
+  height: 62.5vh;
   width: 375px;
   border-top: 1px solid gray;
 `;
@@ -79,7 +79,7 @@ export const ProfileDetailsHighlights = styled.div`
 export const ProfileHighlightImage = styled.img`
   width: 50px;
   height: 50px;
-  padding: 0 1rem;
+  padding: 2px 1rem;
 `;
 
 export const ProfileHighlightIndividualContainer = styled.div`
@@ -121,4 +121,11 @@ export const DetailsPicture = styled.div`
   justify-content: center;
   align-items: center;
   width: 25%;
+`;
+
+export const ProfileFeedContainer = styled.div`
+  position: absolute;
+  top: 63vh;
+  height: 86.5vh;
+  margin-bottom: 3rem;
 `;

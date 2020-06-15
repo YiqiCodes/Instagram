@@ -3,6 +3,7 @@ import React from "react";
 //Components
 import ProfileHeader from "../../components/Profile/ProfileHeader";
 import ProfileDetails from "../../components/Profile/ProfileDetails";
+import ProfileFeed from "../../components/Profile/ProfileFeed";
 import BottomBar from "../../components/Home/Bottom/BottomBar";
 
 // Styles
@@ -16,8 +17,9 @@ const Profile = () => {
     <>
       <OutterContainerDiv>
         <ProfileHeader />
-        <ScrollableContainerDiv style={{ top: "2.5rem" }}>
+        <ScrollableContainerDiv style={{ minHeight: "87vh", top: "2.5rem" }}>
           <ProfileDetails />
+          <ProfileFeed />
         </ScrollableContainerDiv>
         <BottomBar />
       </OutterContainerDiv>

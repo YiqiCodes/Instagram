@@ -1,14 +1,18 @@
 import React from "react";
 
+// Assets
 import PostImageOne from "../../assets/img/PostOne.JPG";
 import PostImageTwo from "../../assets/img/PostTwo.JPG";
 import PostImageThree from "../../assets/img/PostThree.JPG";
 
+// Styles
 import {
   FeedContainer,
   FeedIndividual,
   FeedPost,
 } from "../Search/Posts/PostsSearch.styles.js";
+
+import { ProfileFeedContainer } from "../Profile/Profile.styles";
 
 const ProfileFeed = () => {
   const feedGenerator = () => {
@@ -36,7 +40,7 @@ const ProfileFeed = () => {
     return randomlyGeneratedPicture;
   };
   return (
-    <div style={{ position: "absolute", marginBottom: "3rem" }}>
+    <ProfileFeedContainer>
       {feedGenerator()}
       {feedGenerator()}
       {feedGenerator()}
@@ -44,7 +48,7 @@ const ProfileFeed = () => {
       {feedGenerator()}
       {feedGenerator()}
       {feedGenerator()}
-    </div>
+    </ProfileFeedContainer>
   );
 };
 
