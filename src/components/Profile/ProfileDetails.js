@@ -1,11 +1,10 @@
 import React from "react";
 
-import Yiqi from "../../assets/img/StoryYiqi.png";
 import IconOne from "../../assets/img/ProfileOne.png";
 import IconTwo from "../../assets/img/ProfileTwo.png";
 import IconThree from "../../assets/img/ProfileThree.png";
 
-import StoryYiqi from "../../assets/img/StoryYiqi.png";
+import Yiqi from "../../assets/img/Yiqi2.png";
 import StoryInstagram from "../../assets/img/StoryInsta2.png";
 import StoryCB from "../../assets/img/StoryCB2.png";
 import StoryBanksy from "../../assets/img/StoryBanksy.png";
@@ -88,7 +87,7 @@ const ProfileDetails = () => {
       </ProfileDetailsButtons>
       <ProfileDetailsHighlights>
         <ProfileHighlightIndividualContainer>
-          <ProfileHighlightImage src={StoryYiqi} alt="" />
+          <ProfileHighlightImage src={Yiqi} alt="" />
           <div>New</div>
         </ProfileHighlightIndividualContainer>
         <ProfileHighlightIndividualContainer>

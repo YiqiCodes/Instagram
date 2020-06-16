@@ -34,7 +34,7 @@ export const postContents = [
     username: "zhangyiqi",
     profilePicture: postIcons[3],
     postImage: postIcons[2],
-    likedBy: "natgeo and 1039 others",
+    likedBy: "natgeo and 1,039 others",
     caption: "home is canada",
     totalComments: 6,
     timeStamp: "8 hours ago",
