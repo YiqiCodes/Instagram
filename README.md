@@ -5,4 +5,10 @@ https://instagrampractice.netlify.app/
 
 ## Screenshots
 
-!["Home Page"](https://github.com/TylerZhang00/Instagram/blob/master/src/assets/screenshots/Screenshot3.png?raw=true)
+!["Home Page"](https://github.com/TylerZhang00/Instagram/blob/master/src/assets/screenshots/Home.png?raw=true)
+
+!["Search Page"](https://github.com/TylerZhang00/Instagram/blob/master/src/assets/screenshots/Feed.png?raw=true)
+
+!["Activity Page"](https://github.com/TylerZhang00/Instagram/blob/master/src/assets/screenshots/Activity.png?raw=true)
+
+!["Profile Page"](https://github.com/TylerZhang00/Instagram/blob/master/src/assets/screenshots/ProfileSS.png?raw=true)
