@@ -1,5 +1,7 @@
 Building an identical replica of Instgram with react to practice front end.
 
+Best viewed on mobile.
+
 Deployed with Netlify:
 https://instagrampractice.netlify.app/
 
