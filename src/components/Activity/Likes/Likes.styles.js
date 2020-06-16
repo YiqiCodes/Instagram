@@ -4,6 +4,7 @@ export const LikeContentContainer = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
+  position: absolute;
 `;
 export const LikeContentDiv = styled.div`
   display: flex;

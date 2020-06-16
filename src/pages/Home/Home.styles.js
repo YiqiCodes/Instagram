@@ -30,7 +30,7 @@ export const ContentNotAvailable = styled.div`
   justify-content: center;
   align-items: center;
   height: 100vh;
-  width: 100vw;
+  width: 375px;
   text-align: center;
   flex-direction: column;
   padding: 2px;
