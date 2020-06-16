@@ -70,7 +70,6 @@ const Likes = () => {
       {likeGenerator()}
       {likeGenerator()}
       {likeGenerator()}
-      {likeGenerator()}
     </LikeContentContainer>
   );
 };
