@@ -1,7 +1,17 @@
 import React from "react";
 
-import Icon from "../../assets/img/Heart.png";
 import Yiqi from "../../assets/img/StoryYiqi.png";
+import IconOne from "../../assets/img/ProfileOne.png";
+import IconTwo from "../../assets/img/ProfileTwo.png";
+import IconThree from "../../assets/img/ProfileThree.png";
+
+import StoryYiqi from "../../assets/img/StoryYiqi.png";
+import StoryInstagram from "../../assets/img/StoryInsta2.png";
+import StoryCB from "../../assets/img/StoryCB2.png";
+import StoryBanksy from "../../assets/img/StoryBanksy.png";
+import StoryLR from "../../assets/img/StoryLR.png";
+import StoryEmilie from "../../assets/img/StoryEmilie.png";
+
 import {
   ProfileDetailsContainer,
   ProfileDetailsTop,
@@ -17,6 +27,7 @@ import {
   ProfileButtonRow,
   ProfileIcon,
 } from "../Profile/Profile.styles";
+
 const ProfileDetails = () => {
   return (
     <ProfileDetailsContainer>
@@ -77,34 +88,34 @@ const ProfileDetails = () => {
       </ProfileDetailsButtons>
       <ProfileDetailsHighlights>
         <ProfileHighlightIndividualContainer>
-          <ProfileHighlightImage src={Yiqi} alt="" />
+          <ProfileHighlightImage src={StoryYiqi} alt="" />
           <div>New</div>
         </ProfileHighlightIndividualContainer>
         <ProfileHighlightIndividualContainer>
-          <ProfileHighlightImage src={Yiqi} alt="" />
+          <ProfileHighlightImage src={StoryInstagram} alt="" />
           <div>canada</div>
         </ProfileHighlightIndividualContainer>
         <ProfileHighlightIndividualContainer>
-          <ProfileHighlightImage src={Yiqi} alt="" />
+          <ProfileHighlightImage src={StoryCB} alt="" />
           <div>'contrast'</div>
         </ProfileHighlightIndividualContainer>
         <ProfileHighlightIndividualContainer>
-          <ProfileHighlightImage src={Yiqi} alt="" />
+          <ProfileHighlightImage src={StoryEmilie} alt="" />
           <div>portaits 2</div>
         </ProfileHighlightIndividualContainer>
         <ProfileHighlightIndividualContainer>
-          <ProfileHighlightImage src={Yiqi} alt="" />
+          <ProfileHighlightImage src={StoryBanksy} alt="" />
           <div>portraits</div>
         </ProfileHighlightIndividualContainer>
         <ProfileHighlightIndividualContainer>
-          <ProfileHighlightImage src={Yiqi} alt="" />
+          <ProfileHighlightImage src={StoryLR} alt="" />
           <div>wallpapers</div>
         </ProfileHighlightIndividualContainer>
       </ProfileDetailsHighlights>
       <ProfileDetailsIcons>
-        <ProfileIcon src={Icon} alt="" />
-        <ProfileIcon src={Icon} alt="" />
-        <ProfileIcon src={Icon} alt="" />
+        <ProfileIcon src={IconOne} alt="" />
+        <ProfileIcon src={IconTwo} alt="" />
+        <ProfileIcon src={IconThree} alt="" />
       </ProfileDetailsIcons>
     </ProfileDetailsContainer>
   );
